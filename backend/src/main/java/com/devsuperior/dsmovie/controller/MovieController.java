@@ -19,14 +19,17 @@ public class MovieController {
 	@Autowired
 	private MovieService service;
 	
+	//Retornando os filmes por págins
 	@GetMapping
 	public Page<MovieDTO> findAll(Pageable pageable){
 		return service.findAll(pageable);
 		}
-	
+	//Retornando os filmes por id (um a um)
 	@GetMapping(value = "/{id}")
 	public MovieDTO findById(@PathVariable Long id){
 		return service.findById(id);
 		}
+	
+	
 
 }
