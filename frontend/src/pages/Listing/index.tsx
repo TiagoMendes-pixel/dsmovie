@@ -4,7 +4,6 @@ import MovieCard from "components/MovieCard";
 import Pagination from "components/Navbar/Pagination";
 import { useState, useEffect} from "react";
 import { MoviePage } from "types/movie";
-import { setSourceMapRange } from "typescript";
 import { BASE_URL } from "utils/requests";
 
 
